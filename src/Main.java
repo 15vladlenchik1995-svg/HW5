@@ -2,27 +2,28 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        int clientOs = 0;
-        if (clientOs == 1) {
+        int clientOS = 1;
+        if (clientOS == 1) {
             System.out.println("Установите версию для Android по ссылке ");
-        } else if (clientOs == 0) {
+        } else if (clientOS == 0) {
             System.out.println("Установите версию для iOS по ссылке");
 
         } else {
             System.out.println("Вы ввели что-то не то,по пробуйте еще раз ");
         }
 
-        int clientOs1 = 1;
-        int clientDeviceYear = 2016;
-        if (clientOs1 == 0 && clientDeviceYear < 2015) {
+
+
+        int clientDeviceYear = 2015;
+        if (clientOS == 0 && clientDeviceYear < 2015) {
             System.out.println("Установите облегченную версию для iOS по ссылке ");
 
-        } else if (clientOs1 == 0 && clientDeviceYear >= 2015) {
+        } else if (clientOS == 0 && clientDeviceYear >= 2015) {
             System.out.println("Установите версию для iOS по ссылке ");
-        } else if (clientOs1 == 1 && clientDeviceYear < 2015) {
+        } else if (clientOS == 1 && clientDeviceYear < 2015) {
             System.out.println("Установите облегченную версию для Android по ссылке ");
 
-        } else if (clientOs1 == 1 && clientDeviceYear >= 2015) {
+        } else if (clientOS == 1 && clientDeviceYear >= 2015) {
             System.out.println("Установите версию для Android по ссылке ");
 
         } else {
@@ -52,25 +53,22 @@ public class Main {
             System.out.println("Доставки нет");
         }
 
-        int monthNumber = 4;
+        int monthNumber = 12;
         switch (monthNumber) {
-            case 12,1,2:
+            case 12, 1, 2:
                 System.out.println("Зима");
                 break;
-            case 3,4,5:
+            case 3, 4, 5:
                 System.out.println("Весна");
                 break;
-            case 6,7,8:
+            case 6, 7, 8:
                 System.out.println("Лето ");
                 break;
-            case 9,10,11:
+            case 9, 10, 11:
                 System.out.println("Осень");
                 break;
             default:
                 System.out.println("Введите корректное значение ");
-
-
-
 
 
         }

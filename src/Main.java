@@ -2,27 +2,27 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        int clientOS = 0;
-        if (clientOS == 1) {
+        int clientOs = 0;
+        if (clientOs == 1) {
             System.out.println("Установите версию для Android по ссылке ");
-        } else if (clientOS == 0) {
+        } else if (clientOs == 0) {
             System.out.println("Установите версию для iOS по ссылке");
 
         } else {
             System.out.println("Вы ввели что-то не то,по пробуйте еще раз ");
         }
 
-        int clientOs = 1;
+        int clientOs1 = 1;
         int clientDeviceYear = 2016;
-        if (clientOs == 0 && clientDeviceYear < 2015) {
+        if (clientOs1 == 0 && clientDeviceYear < 2015) {
             System.out.println("Установите облегченную версию для iOS по ссылке ");
 
-        } else if (clientOs == 0 && clientDeviceYear >= 2015) {
+        } else if (clientOs1 == 0 && clientDeviceYear >= 2015) {
             System.out.println("Установите версию для iOS по ссылке ");
-        } else if (clientOs == 1 && clientDeviceYear < 2015) {
+        } else if (clientOs1 == 1 && clientDeviceYear < 2015) {
             System.out.println("Установите облегченную версию для Android по ссылке ");
 
-        } else if (clientOs == 1 && clientDeviceYear >= 2015) {
+        } else if (clientOs1 == 1 && clientDeviceYear >= 2015) {
             System.out.println("Установите версию для Android по ссылке ");
 
         } else {
@@ -52,7 +52,7 @@ public class Main {
             System.out.println("Доставки нет");
         }
 
-        int monthNumber = 9;
+        int monthNumber = 12;
         switch (monthNumber) {
             case 12:
             case 1:
@@ -74,6 +74,8 @@ public class Main {
             case 11:
                 System.out.println("Осень");
                 break;
+            default:
+                System.out.println("Введите корректное значение ");
 
 
         }
